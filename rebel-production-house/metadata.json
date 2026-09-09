@@ -1,0 +1,6 @@
+{
+  "name": "Rebel Production House",
+  "description": "A premium, cinematic digital media platform bringing together original podcasts, films, journalism, social documentaries, and transformative stories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
