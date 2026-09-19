@@ -92,7 +92,7 @@ export const ContactPage: React.FC = () => {
                     Physical Studio
                   </h4>
                   <p className="text-xs text-white/70">
-                    Rebel Production House, 4th Floor, Heritage Media Plaza, Fraser Road, Patna, Bihar 800001
+                    Rebel Production House, 3rd Floor, Pandooi Palace, Boring Road, Patna, Bihar 800001
                   </p>
                 </div>
               </div>

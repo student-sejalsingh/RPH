@@ -27,10 +27,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   // Cinematic reels for rotating background showcase
   const heroReels = [
     {
-      title: "The Art of Cinematic Defiance",
+      title: "The NDA Dream: What It Really Takes",
       sub: "The Piyush Singh Podcast • Episode 01",
       tagline: "Stories That Challenge. Voices That Matter.",
-      desc: "Independent filmmaker Ananya Sen joins Piyush Singh to dismantle commercial film dynasties and celebrate eastern India's storytelling revolution.",
+      desc: "Join Sudhanshu as he shares his inspiring NDA journey, the power of discipline, and the lessons that shaped his path.",
+      // "Independent filmmaker Ananya Sen joins Piyush Singh to dismantle commercial film dynasties and celebrate eastern India's storytelling revolution.",
       image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1920&q=85",
       badge: "Flagship Premiere",
       ctaEpisode: featuredEpisode
