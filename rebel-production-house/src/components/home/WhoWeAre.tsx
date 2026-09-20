@@ -79,7 +79,9 @@ export const WhoWeAre: React.FC<WhoWeAreProps> = ({ onNavigate }) => {
           </h2>
 
           <p className="text-sm sm:text-base text-[#F5F1E8]/75 leading-relaxed font-sans">
-            Rebel Production House (RPH) is a digital media institution blending the cinematic grandeur of high-end cinema, the intellectual depth of long-form journalism, and the raw soul of heartland storytelling. We reject cookie-cutter sensationalism in favor of lasting cultural weight.
+          **Rebel Production House (RPH)** creates cinematic stories and meaningful conversations that inspire, inform, and leave a lasting impact.
+
+            {/* Rebel Production House (RPH) is a digital media institution blending the cinematic grandeur of high-end cinema, the intellectual depth of long-form journalism, and the raw soul of heartland storytelling. We reject cookie-cutter sensationalism in favor of lasting cultural weight. */}
           </p>
         </div>
 

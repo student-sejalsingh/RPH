@@ -196,17 +196,17 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div className="space-y-3 text-xs text-[#F5F1E8]/70">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#C8A95B] shrink-0 mt-0.5" />
-                <span>Fraser Road / Boring Canal Rd, Patna, Bihar 800001, India</span>
+                <span>Pandooi Palace, Boring Road, Patna, Bihar 800001, India</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#C8A95B] shrink-0" />
                 <a href="mailto:contact@rebelproductionhouse.com" className="hover:text-[#C8A95B] transition-colors">
-                  contact@rebelproductionhouse.com
+                  rebelproductionhouse@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#C8A95B] shrink-0" />
-                <span>+91 98350 XXXXX</span>
+                <span>+91 9288285376</span>
               </div>
             </div>
 
@@ -217,7 +217,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <div className="flex items-center gap-3">
                 <a
                   id="footer-social-youtube"
-                  href="https://youtube.com"
+                  href="https://www.youtube.com/@piyushsinghpodcast"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="RPH YouTube"
@@ -227,7 +227,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </a>
                 <a
                   id="footer-social-instagram"
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/piyushsinghpodcast/?hl=en"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="RPH Instagram"
@@ -237,7 +237,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </a>
                 <a
                   id="footer-social-linkedin"
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/rebel-production-house/posts/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="RPH LinkedIn"
@@ -247,7 +247,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </a>
                 <a
                   id="footer-social-email"
-                  href="mailto:contact@rebelproductionhouse.com"
+                  href="mailto:rebelproductionhouse@gmail.com"
                   aria-label="Email RPH"
                   className="w-8 h-8 rounded bg-[#2B1D16] border border-[#C8A95B]/30 flex items-center justify-center text-[#F5F1E8] hover:text-[#C8A95B] hover:border-[#C8A95B] transition-all"
                 >
