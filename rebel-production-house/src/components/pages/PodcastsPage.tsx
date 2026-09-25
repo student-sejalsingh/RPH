@@ -27,6 +27,9 @@ export const PodcastsPage: React.FC<PodcastsPageProps> = ({ onPlayEpisode }) => 
 
   const tags = ['All', 'Cinema', 'Philosophy', 'Society', 'Investigative Reporting'];
 
+  
+
+
   const filteredEpisodes = podcastEpisodes.filter(ep => {
     const matchesTag = selectedTag === 'All' || 
       ep.keyTopics?.some(t => t.toLowerCase().includes(selectedTag.toLowerCase())) ||
@@ -283,7 +286,21 @@ export const PodcastsPage: React.FC<PodcastsPageProps> = ({ onPlayEpisode }) => 
           </span>
         </div>
       </section>
-
+      <section className="py-8 bg-[#0F0F0F]">
+  <div className="max-w-7xl mx-auto px-4 flex justify-center">
+    <a
+      href={`https://wa.me/919288285376?text=${encodeURIComponent(
+        "Hi Rebel Production House! I would like to book a podcast session."
+      )}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#C8A95B] hover:bg-[#cEBE5B] text-white font-bold px-8 py-4 rounded-lg shadow-lg transition-all"
+    >
+      🎙 Book a Podcast via WhatsApp
+    </a>
+  </div>
+</section>
+      
     </div>
   );
 };
