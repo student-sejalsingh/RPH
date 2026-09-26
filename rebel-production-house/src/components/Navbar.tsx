@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { PageId } from '../types';
-import { 
-  Play, 
-  Search, 
-  Menu, 
-  X, 
-  Film, 
-  Tv, 
-  ChevronDown 
+import {
+  Play,
+  Search,
+  Menu,
+  X,
+  Film,
+  Tv,
+  ChevronDown
 } from 'lucide-react';
 
 interface NavbarProps {
@@ -78,31 +78,31 @@ export const Navbar: React.FC<NavbarProps> = ({
     <>
       <header
         id="rph-header"
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-[#0F0F0F]/95 backdrop-blur-md border-b border-[#C8A95B]/20 py-3 shadow-2xl shadow-black/80'
-            : 'bg-gradient-to-b from-[#0F0F0F]/90 via-[#0F0F0F]/60 to-transparent py-4'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+          ? 'bg-[#0F0F0F]/95 backdrop-blur-md border-b border-[#C8A95B]/20 py-3 shadow-2xl shadow-black/80'
+          : 'bg-gradient-to-b from-[#0F0F0F]/90 via-[#0F0F0F]/60 to-transparent py-4'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          
+
           {/* Logo Brand */}
           <button
             id="brand-logo-btn"
             onClick={() => handleLinkClick('home')}
             className="flex items-center gap-3 text-left group focus:outline-none"
           >
-            <div className="relative w-10 h-10 rounded-sm bg-[#2B1D16] border border-[#C8A95B] flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105 shadow-md">
-              <span className="font-['Cinzel'] font-black text-sm tracking-wider text-[#C8A95B]">
-                RPH
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#C8A95B]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="flex items-center">
+              <img
+                src="/assets/aistudio/image/rph-logo.png"
+                alt="Rebel Production House"
+                className="w-[250px] h-[82px] object-contain"
+              />
             </div>
-            <div className="flex flex-col">
-              <span className="font-['Cinzel'] font-bold text-sm tracking-widest text-[#F5F1E8] uppercase group-hover:text-[#C8A95B] transition-colors">
+            <div className="flex min-w-max shrink-0 flex-col">
+              <span className="whitespace-nowrap font-['Cinzel'] font-bold text-sm tracking-widest text-[#F5F1E8] uppercase group-hover:text-[#C8A95B] transition-colors">
                 Rebel Production House
               </span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-[#C8A95B] font-medium hidden sm:block">
+              <span className="whitespace-nowrap text-[10px] uppercase tracking-[0.2em] text-[#C8A95B] font-medium hidden sm:block">
                 Stories That Challenge
               </span>
             </div>
@@ -115,11 +115,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                 key={item.id}
                 id={`nav-link-${item.id}`}
                 onClick={() => handleLinkClick(item.id)}
-                className={`px-3 py-1.5 rounded text-xs tracking-wider uppercase font-semibold transition-all relative ${
-                  currentPage === item.id
-                    ? 'text-[#C8A95B] bg-[#2B1D16]/50 border-b-2 border-[#C8A95B]'
-                    : 'text-[#F5F1E8]/80 hover:text-[#C8A95B] hover:bg-white/5'
-                }`}
+                className={`px-3 py-1.5 rounded text-xs tracking-wider uppercase font-semibold transition-all relative ${currentPage === item.id
+                  ? 'text-[#C8A95B] bg-[#2B1D16]/50 border-b-2 border-[#C8A95B]'
+                  : 'text-[#F5F1E8]/80 hover:text-[#C8A95B] hover:bg-white/5'
+                  }`}
               >
                 {item.label}
               </button>
@@ -131,18 +130,17 @@ export const Navbar: React.FC<NavbarProps> = ({
                 id="nav-shows-dropdown-toggle"
                 onClick={() => setShowsDropdownOpen(!showsDropdownOpen)}
                 onBlur={() => setTimeout(() => setShowsDropdownOpen(false), 250)}
-                className={`flex items-center gap-1 px-3 py-1.5 rounded text-xs tracking-wider uppercase font-semibold transition-all ${
-                  ['rebel-voice', 'rebel-mindset', 'rebel-manch', 'bihar-icons'].includes(currentPage)
-                    ? 'text-[#C8A95B] bg-[#2B1D16]/50 border-b-2 border-[#C8A95B]'
-                    : 'text-[#F5F1E8]/80 hover:text-[#C8A95B] hover:bg-white/5'
-                }`}
+                className={`flex items-center gap-1 px-3 py-1.5 rounded text-xs tracking-wider uppercase font-semibold transition-all ${['rebel-voice', 'rebel-mindset', 'rebel-manch', 'bihar-icons'].includes(currentPage)
+                  ? 'text-[#C8A95B] bg-[#2B1D16]/50 border-b-2 border-[#C8A95B]'
+                  : 'text-[#F5F1E8]/80 hover:text-[#C8A95B] hover:bg-white/5'
+                  }`}
               >
                 <span>Originals</span>
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform ${showsDropdownOpen ? 'rotate-180 text-[#C8A95B]' : ''}`} />
               </button>
 
               {showsDropdownOpen && (
-                <div 
+                <div
                   id="shows-dropdown-menu"
                   className="absolute left-0 mt-2 w-72 bg-[#0F0F0F] border border-[#C8A95B]/30 rounded shadow-2xl p-2 z-50 divide-y divide-white/5"
                 >
@@ -174,11 +172,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               id="nav-link-team"
               onClick={() => handleLinkClick('team')}
-              className={`px-3 py-1.5 rounded text-xs tracking-wider uppercase font-semibold transition-all ${
-                currentPage === 'team'
-                  ? 'text-[#C8A95B] bg-[#2B1D16]/50 border-b-2 border-[#C8A95B]'
-                  : 'text-[#F5F1E8]/80 hover:text-[#C8A95B] hover:bg-white/5'
-              }`}
+              className={`px-3 py-1.5 rounded text-xs tracking-wider uppercase font-semibold transition-all ${currentPage === 'team'
+                ? 'text-[#C8A95B] bg-[#2B1D16]/50 border-b-2 border-[#C8A95B]'
+                : 'text-[#F5F1E8]/80 hover:text-[#C8A95B] hover:bg-white/5'
+                }`}
             >
               Team
             </button>
@@ -186,11 +183,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               id="nav-link-contact"
               onClick={() => handleLinkClick('contact')}
-              className={`px-3 py-1.5 rounded text-xs tracking-wider uppercase font-semibold transition-all ${
-                currentPage === 'contact'
-                  ? 'text-[#C8A95B] bg-[#2B1D16]/50 border-b-2 border-[#C8A95B]'
-                  : 'text-[#F5F1E8]/80 hover:text-[#C8A95B] hover:bg-white/5'
-              }`}
+              className={`px-3 py-1.5 rounded text-xs tracking-wider uppercase font-semibold transition-all ${currentPage === 'contact'
+                ? 'text-[#C8A95B] bg-[#2B1D16]/50 border-b-2 border-[#C8A95B]'
+                : 'text-[#F5F1E8]/80 hover:text-[#C8A95B] hover:bg-white/5'
+                }`}
             >
               Contact
             </button>
@@ -233,7 +229,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <div 
+        <div
           id="mobile-navigation-drawer"
           className="lg:hidden fixed inset-0 top-16 bg-[#0F0F0F]/98 backdrop-blur-xl z-40 overflow-y-auto border-t border-[#C8A95B]/20 p-6 flex flex-col justify-between"
         >
@@ -248,11 +244,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                   key={`mobile-${item.id}`}
                   id={`mobile-nav-${item.id}`}
                   onClick={() => handleLinkClick(item.id)}
-                  className={`text-left p-3 rounded text-sm font-medium transition-colors ${
-                    currentPage === item.id
-                      ? 'bg-[#2B1D16] text-[#C8A95B] border border-[#C8A95B]/40'
-                      : 'text-[#F5F1E8]/80 hover:bg-white/5 hover:text-[#C8A95B]'
-                  }`}
+                  className={`text-left p-3 rounded text-sm font-medium transition-colors ${currentPage === item.id
+                    ? 'bg-[#2B1D16] text-[#C8A95B] border border-[#C8A95B]/40'
+                    : 'text-[#F5F1E8]/80 hover:bg-white/5 hover:text-[#C8A95B]'
+                    }`}
                 >
                   {item.label}
                 </button>
