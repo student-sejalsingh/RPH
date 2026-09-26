@@ -296,10 +296,11 @@ export const PodcastsPage: React.FC<PodcastsPageProps> = ({ onPlayEpisode }) => 
       rel="noopener noreferrer"
       className="text-[#C8A95B] hover:bg-[#cEBE5B] text-white font-bold px-8 py-4 rounded-lg shadow-lg transition-all"
     >
-      🎙 Book a Podcast via WhatsApp
+      🎙 Book a Podcast 
     </a>
   </div>
 </section>
+
       
     </div>
   );
