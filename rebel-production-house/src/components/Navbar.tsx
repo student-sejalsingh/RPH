@@ -91,11 +91,11 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => handleLinkClick('home')}
             className="flex items-center gap-3 text-left group focus:outline-none"
           >
-            <div className="flex items-center">
+            <div className="flex items-center flex-none">
               <img
-                src="/assets/aistudio/image/rph-logo.png"
+                src="https://res.cloudinary.com/iccjj1qt/image/upload/f_auto,q_auto/RPH_logo"
                 alt="Rebel Production House"
-                className="w-[250px] h-[82px] object-contain"
+                className="w-[72px] h-[52px] object-contain flex-none"
               />
             </div>
             <div className="flex min-w-max shrink-0 flex-col">
@@ -109,7 +109,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </button>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-1 xl:space-x-2">
+          <nav className="hidden lg:flex items-center space-x-1 xl:space-x-2 ml-6">
             {primaryNavItems.map((item) => (
               <button
                 key={item.id}
